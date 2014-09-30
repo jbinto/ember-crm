@@ -14,13 +14,16 @@ class Api::V1::IdeasController < ApplicationController
   end
 
   def update
+    respond_with idea.update(idea_params)
   end
 
   def destroy
+    respond_with idea.destroy
   end
 
   private
   def idea
+    Idea.find(params[:id])
   end
 
   def idea_params
