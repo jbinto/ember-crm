@@ -9,10 +9,10 @@ article#idea
     model.ideaShort
 
   p
-    ' Difficulty
+    ' Difficulty:
     model.difficulty
 
   p
-    ' Benefits
+    ' Benefits:
     model.benefits
 
