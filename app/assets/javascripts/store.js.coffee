@@ -1,6 +1,10 @@
+# http://emberjs.com/api/data/classes/DS.RESTAdapter.html#toc_endpoint-path-customization
+DS.RESTAdapter.reopen
+  namespace: 'api/v1'
+
+
 # http://emberjs.com/guides/models/#toc_store
 # http://emberjs.com/guides/models/pushing-records-into-the-store/
-
 App.Store = DS.Store.extend({
 
 })
