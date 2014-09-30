@@ -1,3 +1,3 @@
 App.IdeasRoute = Ember.Route.extend
 
-  model: -> @store.find 'lead'
+  model: -> @store.find 'idea'
