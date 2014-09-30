@@ -2,4 +2,8 @@ article#ideas
   h1 Ideas
   ul
     each idea in controller
-      li= idea.ideaWithBenefits
+      / li= idea.ideaWithBenefits
+      link-to 'idea' idea tagName="li"
+        idea.ideaWithBenefits
+
+= outlet
