@@ -1,0 +1,5 @@
+article#ideas
+  h1 Ideas
+  ul
+    each idea in controller
+      li= idea.ideaShort
