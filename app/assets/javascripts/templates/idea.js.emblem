@@ -25,3 +25,6 @@ article#idea
     label Notes:
     br
     view Ember.TextArea value=model.notes
+
+  p
+    input type='submit' value='Save changes' click='saveChanges'
