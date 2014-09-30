@@ -1,2 +1,11 @@
-h1 Hello World
-outlet
+header
+  article
+    .logo
+      h1
+        a href="#" IdeaBox
+
+section#main
+  / outlet is like 'yield' in rails
+  = outlet
+
+footer
