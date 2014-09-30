@@ -148,7 +148,7 @@ form fieldset.actions .cancel {
   padding-left: 15px;
 }
 
-article#leads {
+article#ideas {
   margin: 30px 35px 0 0;
   width: 25%;
   background: #f6f6f6;
@@ -156,54 +156,54 @@ article#leads {
   padding: 15px 20px 20px;
 }
 
-article#leads h1 {
+article#ideas h1 {
   font-size: 20px;
   padding-left: 6px;
   padding-bottom: 14px;
 }
 
-article#leads h1 a {
+article#ideas h1 a {
   font-size: 15px;
   float: right;
   font-weight: normal;
   margin: 3px 0 0 0;
 }
 
-article#leads input.search {
+article#ideas input.search {
   width: 96%;
   margin: 0 0 12px 5px;
   padding: 2px 0 3px 3px;
 }
 
-article#leads ul li {
+article#ideas ul li {
   border-bottom: 1px solid #dddddd;
   padding: 8px 6px 10px;
   cursor: pointer;
 }
 
-article#leads ul li:hover, article#leads ul li.active {
+article#ideas ul li:hover, article#ideas ul li.active {
   background: #f8e5ce;
 }
 
-article#lead {
+article#idea {
   margin: 30px;
   width: 60%;
   float: left;
 }
 
-article#lead a.edit {
+article#idea a.edit {
   font-size: 15px;
   font-weight: normal;
   margin-left: 15px;
 }
 
-article#lead .unsaved, article#lead .saving {
+article#idea .unsaved, article#idea .saving {
   color: #b20000;
   display: inline-block;
   padding: 0 0 0 20px;
 }
 
-article#lead .saving {
+article#idea .saving {
   color: #00d936;
 }
 
