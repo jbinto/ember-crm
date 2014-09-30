@@ -1,0 +1,18 @@
+article#idea
+  h1= model.ideaWithBenefits
+
+  p
+    / To output content without an element wrapper, start the line with pipe |.
+    / Use an apostrophe ' instead of | to append a single trailing whitespace at the end of the text block.
+    / http://emblemjs.com/syntax/
+    ' Idea:
+    model.ideaShort
+
+  p
+    ' Difficulty
+    model.difficulty
+
+  p
+    ' Benefits
+    model.benefits
+
