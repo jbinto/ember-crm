@@ -8,3 +8,9 @@ App.Idea = DS.Model.extend
     # hooray for string interpolation. Still ugly as sin though.
     "#{@get('ideaShort')} (because #{@get('benefits')})"
   ).property('ideaShort', 'benefits')
+
+
+# n.b. `reopenClass` is not the same as `reopen`
+# Ruby equiv: @@STATUSES = [...]
+App.Idea.reopenClass
+  STATUSES: ['new', 'old', 'in progress', 'bad', 'complete']

@@ -9,8 +9,9 @@ article#idea
     model.ideaShort
 
   p
-    ' Status:
-    model.status
+    label Status:
+    / http://emberjs.com/api/classes/Ember.Select.html
+    view Ember.Select content=App.Idea.STATUSES value=model.status
 
   p
     ' Difficulty:
