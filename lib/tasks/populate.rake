@@ -24,11 +24,22 @@ namespace :db do
       ].sample
     end
 
+    def random_status
+      [
+        'new',
+        'old',
+        'in progress',
+        'complete',
+        'bad'
+      ].sample
+    end
+
     20.times do
       Idea.create(
         idea_short: Faker::Company.catch_phrase,
         difficulty: random_difficulty,
         benefits: random_benefits,
+        status: random_status,
         notes: Faker::HipsterIpsum.words(50).join(' ')
       )
     end

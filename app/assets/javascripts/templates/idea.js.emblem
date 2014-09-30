@@ -9,6 +9,10 @@ article#idea
     model.ideaShort
 
   p
+    ' Status:
+    model.status
+
+  p
     ' Difficulty:
     model.difficulty
 
