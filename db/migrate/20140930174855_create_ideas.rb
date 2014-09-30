@@ -5,6 +5,8 @@ class CreateIdeas < ActiveRecord::Migration
       t.string :difficulty
       t.string :benefits
       t.text :notes
+
+      t.timestamps
     end
   end
 end
