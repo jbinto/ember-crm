@@ -14,6 +14,8 @@ class Api::V1::IdeasController < ApplicationController
   end
 
   def update
+    # pretend it's really slow
+    sleep 1
     respond_with idea.update(idea_params)
   end
 

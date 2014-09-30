@@ -28,7 +28,7 @@ article#idea
 
   p
     input type='submit' value='Save changes' click='saveChanges'
-    if isDirty
+    if showUnsavedMessage
       .unsaved You have unsaved changes.
     if isSaving
       .saving Saving, please wait...
