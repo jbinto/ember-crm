@@ -28,11 +28,3 @@ article#idea
     fieldset.actions
       input type='submit' value='Save changes' click='saveChanges'
       a.cancel href="#" click="cancel" Cancel
-
-
-  p
-    input type='submit' value='Save changes' click='saveChanges'
-    if showUnsavedMessage
-      .unsaved You have unsaved changes.
-    if isSaving
-      .saving Saving, please wait...
