@@ -8,3 +8,4 @@ App.Router.map ->
   @resource 'ideas', path: '/', ->
     @resource 'idea', path: '/ideas/:id', ->
       @route 'edit'
+      @route 'new'
