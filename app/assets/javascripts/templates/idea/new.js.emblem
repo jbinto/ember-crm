@@ -1,0 +1,30 @@
+article#idea
+  h1= fields.ideaWithBenefits
+
+  form
+    fieldset
+      dl
+        / You can condense nested HTML or block mustache content into a single line by using : to terminate the present element or block mustache declaration.
+        / http://emblemjs.com/syntax/
+        dt: label Idea (short):
+        dd: view Ember.TextField value=fields.ideaShort
+
+      dl
+        dt: label Status:
+        dd: view Ember.Select content=App.Idea.STATUSES value=fields.status
+
+      dl
+        dt: label Difficulty:
+        dd: view Ember.TextField value=fields.difficulty
+
+      dl
+        dt: label Benefits:
+        dd: view Ember.TextField value=fields.benefits
+
+      dl
+        dt: label Notes:
+        dd: view Ember.TextArea value=fields.notes
+
+    fieldset.actions
+      input type='submit' value='Create idea' click='createIdea'
+      a.cancel href="#" click="cancel" Cancel
