@@ -1,4 +1,4 @@
-App.IdeaNewController = Ember.ObjectController.extend
+App.IdeaNewController = Ember.Controller.extend
   actions:
     createIdea: ->
       # Ref: http://emberjs.com/api/data/classes/DS.Store.html
