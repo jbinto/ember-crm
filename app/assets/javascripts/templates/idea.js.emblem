@@ -1,34 +1,43 @@
-article#idea
-  h1= model.ideaWithBenefits
+outlet
 
-  p
-    / To output content without an element wrapper, start the line with pipe |.
-    / Use an apostrophe ' instead of | to append a single trailing whitespace at the end of the text block.
-    / http://emblemjs.com/syntax/
-    ' Idea:
-    model.ideaShort
+unless isEditing
+  article#idea
+    h1
+      model.ideaWithBenefits
+      / link-to [TEXT] [ROUTE] [MODEL] [ADDITIONAL-ATTRS]
+      / http://emberjs.com/guides/templates/links/#toc_adding-additional-attributes-on-a-link
+      link-to 'Edit' 'idea.edit' model classNames='edit'
 
-  p
-    label Status:
-    / http://emberjs.com/api/classes/Ember.Select.html
-    view Ember.Select content=App.Idea.STATUSES value=model.status
 
-  p
-    ' Difficulty:
-    model.difficulty
+    p
+      / To output content without an element wrapper, start the line with pipe |.
+      / Use an apostrophe ' instead of | to append a single trailing whitespace at the end of the text block.
+      / http://emblemjs.com/syntax/
+      ' Idea:
+      model.ideaShort
 
-  p
-    ' Benefits:
-    model.benefits
+    p
+      label Status:
+      / http://emberjs.com/api/classes/Ember.Select.html
+      / Note: The `model.status` can be shortened to just `status. Our ObjectController will proxy it down.
+      view Ember.Select content=App.Idea.STATUSES value=model.status
 
-  p
-    label Notes:
-    br
-    view Ember.TextArea value=model.notes
+    p
+      ' Difficulty:
+      model.difficulty
 
-  p
-    input type='submit' value='Save changes' click='saveChanges'
-    if showUnsavedMessage
-      .unsaved You have unsaved changes.
-    if isSaving
-      .saving Saving, please wait...
+    p
+      ' Benefits:
+      model.benefits
+
+    p
+      label Notes:
+      br
+      view Ember.TextArea value=model.notes
+
+    p
+      input type='submit' value='Save changes' click='saveChanges'
+      if showUnsavedMessage
+        .unsaved You have unsaved changes.
+      if isSaving
+        .saving Saving, please wait...
