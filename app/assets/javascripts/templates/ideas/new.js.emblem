@@ -1,5 +1,7 @@
 article#idea
-  h1= fields.ideaWithBenefits
+  h1 New Idea
+  if showError
+    .error Please make sure you fill in all the fields.
 
   form
     fieldset
