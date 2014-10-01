@@ -1,3 +1,5 @@
+outlet
+
 article#idea
   h1
     model.ideaWithBenefits
