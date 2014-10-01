@@ -36,6 +36,7 @@ unless isEditing
       view Ember.TextArea value=model.notes
 
     p
+      a.delete href='#' click='delete' Delete idea
       input type='submit' value='Save changes' click='saveChanges'
       if showUnsavedMessage
         .unsaved You have unsaved changes.

@@ -4,6 +4,9 @@ App.IdeaController = Ember.ObjectController.extend
   # a handler.
   actions:
     saveChanges: -> @get('model').save() if @get('model.isDirty')
+    delete: ->
+      @get('model').destroyRecord().then =>
+        @transitionToRoute 'ideas'
 
   showUnsavedMessage: ( ->
     @get('isDirty') && !@get('isSaving')
