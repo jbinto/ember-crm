@@ -6,5 +6,5 @@ App.Router.reopen
 
 App.Router.map ->
   @resource 'ideas', path: '/', ->
-    @resource 'idea', path: '/ideas/:id'
-
+    @resource 'idea', path: '/ideas/:id', ->
+      @route 'edit'
