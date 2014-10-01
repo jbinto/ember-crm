@@ -11,6 +11,7 @@ article#idea
   p
     label Status:
     / http://emberjs.com/api/classes/Ember.Select.html
+    / Note: The `model.status` can be shortened to just `status. Our ObjectController will proxy it down.
     view Ember.Select content=App.Idea.STATUSES value=model.status
 
   p
