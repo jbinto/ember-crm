@@ -1,7 +1,7 @@
 article#ideas
   h1
     | Ideas
-    link-to '+ New' 'idea.new'
+    link-to '+ New' 'ideas.new'
   ul
     each idea in controller
       / li= idea.ideaWithBenefits

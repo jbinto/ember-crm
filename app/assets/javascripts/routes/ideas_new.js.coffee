@@ -1,3 +1,3 @@
-App.IdeaNewRoute = Ember.Route.extend
+App.IdeasNewRoute = Ember.Route.extend
   setupController: (controller) ->
     controller.set 'fields', {}
