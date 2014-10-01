@@ -2,7 +2,8 @@ header
   article
     .logo
       h1
-        a href="#" IdeaBox
+        / a href="" IdeaBox
+        link-to 'IdeaBox' 'ideas'
 
 section#main
   / outlet is like 'yield' in rails
