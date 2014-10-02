@@ -2,8 +2,9 @@ article#ideas
   h1
     | Ideas
     link-to '+ New' 'ideas.new'
+  view Ember.TextField value=search placeholder="search" class="search"
   ul
-    each idea in controller
+    each idea in ideas
       / li= idea.ideaWithBenefits
       link-to 'idea' idea tagName="li"
         idea.ideaWithBenefits
