@@ -29,7 +29,7 @@ class Api::V1::IdeasController < ApplicationController
   end
 
   def idea_params
-    params.require(:idea).permit(:difficulty, :benefits, :notes, :status)
+    params.require(:idea).permit(:idea_short, :difficulty, :benefits, :notes, :status)
   end
 
 end
