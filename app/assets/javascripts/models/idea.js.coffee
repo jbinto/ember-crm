@@ -14,3 +14,6 @@ App.Idea = DS.Model.extend
 # Ruby equiv: @@STATUSES = [...]
 App.Idea.reopenClass
   STATUSES: ['new', 'old', 'in progress', 'bad', 'complete']
+  valid: (fields) ->
+    fields.ideaShort and fields.benefits
+
